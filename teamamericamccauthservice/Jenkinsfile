@@ -19,7 +19,7 @@ node {
 	
 	  if(response=="Yes") {
 	    stage('Release - AuthService') {
-	      sh 'gradle build -x test'
+	      //sh 'gradle build -x test'
 	      sh 'echo AuthService is ready to release!'
 	    }
 	  }
