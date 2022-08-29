@@ -1,6 +1,6 @@
 node {
     stage ("Checkout AuthService"){
-        git branch: 'main', url: ' https://github.com/foxwas/bahmsdfox-msdauthservice'
+        git branch: 'main', url: 'https://github.com/mkolacki/teamamericamccauth.git'
     }
     
     stage ("Gradle Build - AuthService") {
