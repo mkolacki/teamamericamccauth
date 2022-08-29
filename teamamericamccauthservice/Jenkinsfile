@@ -4,11 +4,11 @@ node {
     }
     
     stage ("Gradle Build - AuthService") {
-        sh 'gradle teamamericamccauthservice/build.gradle clean build'
+        sh 'gradle -b teamamericamccauthservice/build.gradle clean build'
     }
     
     stage ("Gradle Bootjar-Package - AuthService") {
-        sh 'gradle teamamericamccauthservice/build.gradle bootjar'
+        sh 'gradle -b teamamericamccauthservice/build.gradle bootjar'
     }
     
     stage('User Acceptance Test - AuthService') {
